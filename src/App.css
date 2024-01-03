@@ -1,0 +1,15 @@
+import "./App.css";
+import Navbar from "./componects/Navbar";
+import Page from "./componects/Page";
+import Home from "./componects/Home";
+
+function App(){
+  return (
+    <>
+    <Navbar />
+    <Page />
+    <Home />
+  
+    </>
+  )
+}
