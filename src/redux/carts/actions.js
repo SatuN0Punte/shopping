@@ -4,12 +4,31 @@ import {
     INCREASE_TO_CART,
     DECREASE_TO_CART,
 } from "./actionTypes";
-export const addTOCart = (product) => {
-    return{
+
+export const addToCart = (product) => {
+    return {
         type: ADD_TO_CART,
-        playload: product,
+        payload: product,
     };
 };
-export const removFromCart = (product) => {
-    return
-}
+
+export const removeFromCart = (productId) => {
+    return {
+        type: REMOVE_TO_CART,
+        payload: productId,
+    };
+};
+
+export const increaseToCart = (productId) => {
+    return {
+        type: INCREASE_TO_CART,
+        payload: productId,
+    };
+};
+
+export const decreaseToCart = (productId) => {
+    return {
+        type: DECREASE_TO_CART,
+        payload: productId,
+    };
+};

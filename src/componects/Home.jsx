@@ -11,6 +11,13 @@ const Home = () => {
         <div className="grid sm:grid-cols-3 grid-cols-1 gap-8">
           <div className="cols-span-2">
             <div className="grid sm:grid-cols-2 gap-y-10 grid-cols-1">
+              {product.length ? (
+                product.map((p, i) => {
+                  return <ProductItem product={p} key={i} />;
+                })
+              ) : (
+                <div>No product Found</div>
+              )}
               <div className="card w-96 bg-base-100 shadow-xl">
                 <figure>
                   <img
