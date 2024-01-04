@@ -11,10 +11,10 @@ const AddProduct = () => {
 
   const onSubmit = (data) => console.log(data);
   
-  // โค้ดส่วนอื่น ๆ ของคุณ...
+  
 
   return (
-    // JSX ของคุณ...
+    
   );
 };
 
